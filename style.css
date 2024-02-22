@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* body {
+    height: 100vh;
+    width: 100vw;
+} */
+
+.firstPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    background-color: #fb7a7a;
+    height: 8%;
+    width: 100%;
+}
+
+.ul {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 2.3vh;
+    letter-spacing: 0.25rem;
+}
+
+#navicon {
+    height: 65%;
+    width: 3.3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mainPage {
+    display: flex;
+    width: 100%;
+    height: 92%;
+    background-image: linear-gradient(
+        to right,
+        #fef2a2,
+        #f9e9c2,
+        #ffcadc,
+        #ffb9d0,
+        #ffb4ee
+    );
+}
+.textPart {
+    display: flex;
+    height: 100%;
+    width:50%;
+    flex-direction: column;
+}
+.textPart div {
+    margin: auto;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+}
+#heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 4rem;
+}
+
+#para {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 0.09rem;
+    margin-bottom: 3.5rem;
+}
+
+#btn {
+    width: 12rem;
+    height: 2.5rem;
+    color: white;
+    background-color: #fb7a7a;
+    border: none;
+
+}
+
+.imagePart {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+#imgg {
+    height: 100%;
+    width: 100%;
+    transform: scaleX(1.7);
+}
+
+.secondPage {
+    height: 100vh;
+    width: 100vw;
+    border-top: 1px solid black;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to right,
+        #fef2a2,
+        #f9e9c2,
+        #ffcadc,
+        #ffb9d0,
+        #ffb4ee
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+.firstHalfs {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.child {
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.childA {
+    height: 49%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.childB {
+    height: 49%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.vertImg {
+    height: 100%;
+    width: 100%;
+    transform:scaleY(1.9);
+}
+
+.child1 {
+    height: 100%;
+    width: 48%;
+    overflow: hidden;
+}
+
+.horzImg {
+    height: 100%;
+    width: 100%;
+    transform: scaleX(1.1);
+}
+
+.secondHalfs {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.container1 {
+    height: 56%;
+    width: 80%;
+    margin: auto;
+    background-color: #fb7a7a;
+    overflow: hidden;
+}
+
+#para1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 0.9rem;
+    margin-top: 1.6rem;
+    margin-left: 2.2rem;
+}
+
+#conh2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    line-height: 2.8rem;
+    margin-left: 2.2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+#conh3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2.2rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+#ldiv {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    overflow: hidden;
+    margin-left: 0.4rem;
+}
+
+#arrowIcon {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1250px) {
+    .ul {
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .ul li {
+        font-size: 1.1rem;
+        letter-spacing: 0.15rem;
+    }
+        
+    #navicon {
+        width: 3.6%;
+    }
+
+    #para1 {
+        letter-spacing: 0.1rem;
+        margin-bottom: 1.4rem;
+        font-size: 0.9rem;
+    }
+    
+    #conh2 {
+        letter-spacing: 0.2rem;
+        font-size: 2.2rem;
+    }
+    
+    #conh3 {
+        margin-left: 2.2rem;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .ul {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .ul li {
+        font-size: 0.78rem;
+        letter-spacing: 0.05rem;
+    }
+
+    #navicon {
+        width: 4%;
+    }
+
+    #para1 {
+        letter-spacing: 0.1rem;
+        margin-bottom: 1.4rem;
+        font-size: 0.9rem;
+    }
+    
+    #conh2 {
+        letter-spacing: 0.05rem;
+        font-size: 1.4rem;
+    }
+    
+    #conh3 {
+        margin-left: 2.2rem;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+    .textPart div {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    #heading {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    #para {
+        line-height: 1rem;
+        letter-spacing: 0.05rem;
+        margin-bottom: 3.5rem;
+        overflow: hidden;
+    }
+    
+    #btn {
+        width: 9rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #para1 {
+        letter-spacing: 0.01rem;
+        font-size: 0.5rem;
+    }
+    
+    #conh2 {
+        letter-spacing: 0.05rem;
+        font-size: 1rem;
+    }
+    
+    #conh3 {
+        font-size: 0.7rem;
+    }
+
+    .content {
+        height: 45%;
+        width: 70%;
+    }
+
+    .textPart div {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #heading {
+        font-size: 1.4rem;
+        letter-spacing: 0.03rem;
+        margin-bottom: 1.3rem;
+    }
+    
+    #para {
+        letter-spacing: 0.01rem;
+        margin-bottom: 2.5rem;
+        overflow: hidden;
+    }
+    
+    #btn {
+        width: 7rem;
+        height: 1.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    #para1 {
+        letter-spacing: 0.01rem;
+        font-size: 0.3rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    #conh2 {
+        letter-spacing: 0.05rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    #conh3 {
+        font-size: 0.5rem;
+    }
+
+    .content {
+        height: 35%;
+        width: 50%;
+    }
+
+}
